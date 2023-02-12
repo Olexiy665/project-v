@@ -1,0 +1,19 @@
+:root {
+  --main-bg-color: #200d3a;
+}
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  background-color: var(--main-bg-color);
+}
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
