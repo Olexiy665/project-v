@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>FrontendSTAR</title>
     <style>
       .loader {
         position: absolute;
@@ -17,7 +17,13 @@
         flex-direction: column;
         justify-content: center;
         background-color: #200d3a;
+        z-index: 1;
         margin: auto;
+      }
+      .loader--sun-container {
+        height: 180px;
+        overflow: hidden;
+        width: 180px;
       }
       .loader--sun {
         position: relative;
@@ -154,16 +160,18 @@
   </head>
   <body>
     <div id="loader" class="loader">
-      <div class="loader--sun">
-        <div class="stripes-container">
-          <div class="loader--stripe"></div>
-          <div class="loader--stripe"></div>
-          <div class="loader--stripe"></div>
-          <div class="loader--stripe"></div>
-          <div class="loader--stripe"></div>
-          <div class="loader--stripe"></div>
-          <div class="loader--stripe"></div>
-          <div class="loader--stripe"></div>
+      <div id="loader--sun-container" class="loader--sun-container">
+        <div id="loader--sun" class="loader--sun">
+          <div class="stripes-container">
+            <div class="loader--stripe"></div>
+            <div class="loader--stripe"></div>
+            <div class="loader--stripe"></div>
+            <div class="loader--stripe"></div>
+            <div class="loader--stripe"></div>
+            <div class="loader--stripe"></div>
+            <div class="loader--stripe"></div>
+            <div class="loader--stripe"></div>
+          </div>
         </div>
       </div>
       <div class="loader--text">
@@ -190,6 +198,29 @@
           </g>
         </svg>
         <div class="loader--text--cursor"></div>
+      </div>
+    </div>
+    <div id="intro-section" class="intro-section">
+      <div class="intro--landscape-wrapper">
+        <div id="intro--landscape" class="intro--landscape"></div>
+      </div>
+      <div class="intro--header" id="intro--header">
+        <div class="intro--header-top">
+          <div class="letter">F</div>
+          <div class="letter">R</div>
+          <div class="letter">O</div>
+          <div class="letter">N</div>
+          <div class="letter">T</div>
+          <div class="letter">E</div>
+          <div class="letter">N</div>
+          <div class="letter">D</div>
+        </div>
+        <div class="intro--header-middle">
+          <div class="letter">S</div>
+          <div class="letter">T</div>
+          <div class="letter">A</div>
+          <div class="letter">R</div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
