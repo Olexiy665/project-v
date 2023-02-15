@@ -205,7 +205,7 @@
         <div id="intro--landscape" class="intro--landscape"></div>
       </div>
       <div class="intro--header" id="intro--header">
-        <div class="intro--header-top">
+        <div id="intro--header-top" class="intro--header-top">
           <div class="letter">F</div>
           <div class="letter">R</div>
           <div class="letter">O</div>
@@ -222,6 +222,69 @@
           <div class="letter">R</div>
         </div>
       </div>
+
+      <div id="intro--car-wrapper" class="intro--car-wrapper">
+        <div class="intro--car-img-wrapper">
+          <svg
+            class="car--svg"
+            viewBox="42.459 97.185 374.778 171.276"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <linearGradient
+                gradientTransform="rotate(221, 0.5, 0.5)"
+                x1="50%"
+                y1="0%"
+                x2="50%"
+                y2="100%"
+                id="flux-gradient"
+              >
+                <stop
+                  stop-color="hsl(315, 100%, 72%)"
+                  stop-opacity="1"
+                  offset="0%"
+                ></stop>
+                <stop
+                  stop-color="hsl(227, 100%, 50%)"
+                  stop-opacity="1"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+
+            <ellipse
+              style="
+                fill: transparent;
+                paint-order: stroke;
+                stroke-width: 3px;
+                stroke: url(#flux-gradient);
+              "
+              cx="150"
+              cy="224.5"
+              rx="11.779"
+              ry="31.816"
+            ></ellipse>
+            <ellipse
+              style="
+                fill: transparent;
+                paint-order: stroke;
+                stroke-width: 3px;
+
+                stroke: url(#flux-gradient);
+              "
+              cx="52.259"
+              cy="208.97"
+              rx="6.259"
+              ry="23.377"
+            ></ellipse>
+          </svg>
+          <img src="/car.png" alt="car" />
+        </div>
+      </div>
+    </div>
+    <div id="disclaimer" class="disclaimer">
+      <h6>Version 0.1.0. To be continued...</h6>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
