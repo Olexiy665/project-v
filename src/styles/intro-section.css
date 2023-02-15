@@ -5,6 +5,26 @@
   overflow: hidden;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 @keyframes glow {
   0% {
     filter: drop-shadow(0 0 6px #cf33d9) drop-shadow(0 0 6px #cf33d9);
@@ -74,7 +94,6 @@
   background-size: 50px 50px, 80px 80px;
   background-position: -1px -1px, -1px -1px;
 
-
   transform: rotateX(95deg) scaleX(0.01) scaleY(0);
 }
 
@@ -101,7 +120,7 @@
   color: transparent;
   position: relative;
   display: block;
-  letter-spacing: -15px;
+  letter-spacing: -12px;
   transform: rotate(-10deg) skew(-20deg) translateX(-10000px);
   transition: transform 1s ease-in-out;
   margin-bottom: -36px;
@@ -154,4 +173,32 @@
 .show-intro--header .intro--header-middle {
   opacity: 1;
   animation: stamp 0.3s ease-in-out;
+}
+
+.disclaimer {
+  position: fixed;
+  bottom: 2vh;
+  right: 5px;
+  opacity: 0;
+}
+.disclaimer h6 {
+  overflow: hidden;
+  font-size: 12px;
+
+  border-right: 0.15em solid #eca089;
+  padding-right: 2px;
+  margin: 0;
+  white-space: nowrap;
+  font-family: sans-serif;
+  color: #ecc6a2;
+  text-shadow: 0 0 2px #eca089;
+}
+.show-disclaimer.disclaimer {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out 2s;
+}
+
+.show-disclaimer.disclaimer h6 {
+  animation: typing 3.5s steps(33, end) 2s,
+    blink-caret 0.75s step-end infinite 2s;
 }
